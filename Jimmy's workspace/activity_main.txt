@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jrp3t.test.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imvPic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="false"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="176dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnUpload"
+        android:layout_alignStart="@+id/btnUpload"
+        android:layout_toLeftOf="@+id/btnCamera"
+        android:layout_toStartOf="@+id/btnCamera" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity=""
+        android:text="Upload"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_weight="0.99"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/btnCamera"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+            android:id="@+id/txvInst"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Click Upload to Upload an image from the Gallery, or click Camera to take a new picture. Click Submit to confirm the picture is correct, or click Back to leave the page."
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="103dp"
+        android:layout_below="@+id/imvPic"
+        android:layout_alignLeft="@+id/imvPic"
+        android:layout_alignStart="@+id/imvPic" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/camera"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignTop="@+id/imvPic"
+        android:layout_alignRight="@+id/btnCamera"
+        android:layout_alignEnd="@+id/btnCamera"
+        android:layout_marginTop="85dp" />
+</RelativeLayout>
